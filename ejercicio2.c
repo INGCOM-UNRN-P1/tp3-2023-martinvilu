@@ -200,8 +200,9 @@ char a_minuscula(char letra)
 bool es_vocal(char letra)
 {
     letra = a_minuscula(letra); // Convertir a minúscula antes de verificar.
-    return (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' ||
-            letra == 'u');
+    bool resultado = (letra == 'a' || letra == 'e' || letra == 'i' ||
+                      letra == 'o' || letra == 'u');
+    return resultado;
 }
 
 /**
